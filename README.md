@@ -6,7 +6,11 @@
 |---|---|
 | 名前 | 大平 礼 |
 | 読み | おおひら ひろと |
-| 居住 | 東京都世田谷区 |
+| 年齢 | 27歳 |
+| エンジニア歴 | 5年目 (2020年11月~) |
+| 最終学歴 | 福島高専卒 |
+| 出身地 | 福島県いわき市 |
+| 居住地 | 東京都世田谷区 |
 | X | [@HitoroOhria](https://x.com/HitoroOhria) |
 | Facebook | [@hirohira1610](https://www.facebook.com/hirohira1610/) |
 | GitHub | [@HitoroOhria](https://github.com/HitoroOhria) |
