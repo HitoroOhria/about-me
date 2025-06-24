@@ -16,6 +16,7 @@
 | GitHub | [@HitoroOhria](https://github.com/HitoroOhria) |
 | Zenn | [@HitoroOhria](https://zenn.dev/hiroto_ohira) |
 | Qiita | [@HitoroOhria](https://qiita.com/HitoroOhria) |
+| Blog | [Blog](https://hirotoohira.link/) |
 | プレーリーカード | [@hiroto_ohira](https://my.prairie.cards/u/hiroto_ohira) |
 
 ## 概要
