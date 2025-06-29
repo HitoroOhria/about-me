@@ -29,7 +29,7 @@
 
 - 言語
   - JavaScript / TypeScript
-  - Node.js/ Go / Java / Ruby / Python
+  - Node.js / Go / Java / Ruby / Python
 - ライブラリ・フレームワーク
   - React / Next.js / Vue.js / Storybook / SWR / TanStack Query
   - Echo / Gin / Spring Boot / Ruby on Rails
