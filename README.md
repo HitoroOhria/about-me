@@ -37,7 +37,7 @@
 - DB
   - MySQL / PostgreSQL / Redis / SpiceDB
 - API等
-  - REST API / protobuf / OpenAPI
+  - REST API / OpenAPI / protobuf / gRPC
 - 開発手法等
   - BFF (GraphQL) / Microservices / DDD
 - インフラ
@@ -57,7 +57,7 @@
   - GCP
     - IAM
     - Cloud Storage
-    - Cloud Functions / Cloud Run
+    - Cloud Functions / Cloud Run / GKE
     - Cloud SQL (MySQL)
   - Firebase
     - Authentication
@@ -167,7 +167,7 @@
 | 求人プラットフォームの開発        | 2024年9月 - 現在            | 業務委託       | プログラマー           |
 | 防災アプリの開発                 | 2024年1月 - 2024年8月 (8ヶ月)     | 業務委託       | プログラマー           |
 | ファンクラブサイトの開発          | 2022年12月 - 2023年12月 (13ヶ月)   | 業務委託       | プログラマー           |
-| アウトドア施設予約サイトの開発     |  2022年4月 - 2022年11月 (8ヶ月)   | 業務委託       | プログラマー           |
+| アウトドア施設予約サイトの開発     | 2022年4月 - 2022年11月 (8ヶ月)    | 業務委託       | プログラマー           |
 | 災害安否報告アプリの開発          | 2021年12月 - 2022年3月 (4ヶ月)    | 業務委託       | プログラマー           |
 | CDPの自社開発                   | 2021年9月 - 2021年11月 (3ヶ月)    | 正社員        | プログラマー           |
 | ポイント配信サービスの受託開発	    | 2021年3月 - 2021年8月 (6ヶ月)     | 正社員         | プログラマー           |
@@ -189,7 +189,7 @@
     - S3 / CloudFront
     - Route53 / API Gateway / ELB
     - EC2 / ECS / Fargate
-    - RDS / Aurora / ElastiCache (Redis)
+    - RDS (MySQL) / Aurora / ElastiCache (Redis)
     - SQS
     - CodeDeploy / CodeBuild / CodePipeline
     - CloudWatch
@@ -253,7 +253,7 @@
   - React Native / Expo
   - Go / Gin
   - PostgreSQL / SpiceDB
-  - protobuf / OpenAPI
+  - OpenAPI / protobuf / gRPC
   - Docker / Terraform
   - GCP
     - Cloud Storage
@@ -287,7 +287,7 @@
   - JavaScript / TypeScript / React / Next.js / Storybook / SWR / zod
   - Node.js
   - REST API
-  - BFF / DDD
+  - BFF (Node.js) / DDD
   - Docker / Terraform
   - GCP
     - Cloud Storage
@@ -317,3 +317,31 @@
     - 全体的な期限を気にしつつチケットの取捨選択・回避策提案を行った
   - レトロスペクティブにて具体的な問題に対して解決策を考える振り返りを導入し、PDCA を回してく環境を作った
   - インシデント対応におけるログの重要さ (データをすべて出力する)
+
+### アウトドア施設予約サイトの開発 (2022年4月 - 2022年11月)
+
+- 概要
+  - アウトドア施設予約サイトのバックエンド開発
+- 使用技術
+  - Go
+  - MySQL / Redis
+  - protobuf / gRPC
+  - BFF (GraphQL) / Microservices / DDD
+  - Docker / Kubernetes / Terraform
+  - GCP
+    - Cloud Storage
+    - GKE
+    - Cloud SQL (MySQL)
+  - GitHub Actions / ArgoCD
+  - Sentry
+- チーム構成
+  - PdM1名、デザイナー1名、CS1名、プログラマー4名
+- 開発ツール
+  - GitHub / Asana
+- 開発手法
+  - チケットベース開発
+- 業務内容
+  - 初めて触る技術も多い中、技術力が高い環境で向上心を持って仕事を行うことができた
+  - 初めてのスキーマ駆動開発で並行実装のメリットを体感できた
+  - DDD に関しては設計難易度が高く、随時チームメンバーと話し合いながら模索した
+  - DBスキーマの負債改善を経験する機会があり、大変さを痛感するとともにスキーマ設計の重要性を実感した
