@@ -31,7 +31,7 @@
   - JavaScript / TypeScript
   - Node.js / Go / Java / Ruby / Python
 - ライブラリ・フレームワーク
-  - React / Next.js / Vue.js / Storybook / SWR / TanStack Query
+  - React / Next.js / Vue.js / Storybook / SWR / TanStack Query / React-Query / Redux
   - Echo / Gin / Spring Boot / Ruby on Rails
   - React Native / Expo
 - DB
@@ -172,11 +172,20 @@
   - 求人プラットフォームシステムのフロントエンド・バックエンドの開発
   - 求人プラットフォームシステムのバックエンドのリアーキテクチャ
 - 使用技術
-  - JavaScript / TypeScript / React / Next.js
+  - JavaScript / TypeScript / React / Next.js / Storybook / React-Query / Redux
   - Go / Gin
-  - MySQL
+  - MySQL / Redis
   - Docker / Terraform
-  - AWS EC2 / ECS / Fargate / RDS / Aurora
+  - AWS
+    - IAM / VPC
+    - S3 / CloudFront
+    - Route53 / API Gateway / ELB
+    - EC2 / ECS / Fargate
+    - RDS / Aurora / ElastiCache (Redis)
+    - SQS
+    - CodeDeploy / CodeBuild / CodePipeline
+    - CloudWatch
+  - GitHub Actions
 - チーム構成
   - 全体で3チーム
   - 自治tー無はPO1名、ScM1名、プログラマー4名
@@ -188,9 +197,10 @@
   - 新規チームでの開発
     - 自分含め全チームメンバーが新規参画の新しいチームだった
     - 誰もプロダクトのドメイン知識やお作法を知らない状態から、一丸となって開発にあたった
-  - かなり本格的なスクラムによる開発
-    - スクラムイベントで1日が終わる曜日があるほど、イベントに時間を割いて開発を回していた
-    - チケット運用では、すべてのタスクは PBI 化、完了の定義の作成、PO によるバックログリファインメインとまでしっかりと行なっていた
+  - 本格的なスクラムによる開発
+    - スプリントレビュー・レトロスペクティブ・プランニングのスクラムイベントで1日が終わる曜日があった
+    - 他、デイリースクラムやリファインメントも実施していた
+    - チケット運用では、すべてのタスクは PBI 化、完了の定義の作成、PO によるバックログリファインメイントを行なっていた
   - 新規機能の開発
     - 求人プラットフォームのオプション商品の開発を行った
     - フロントエンドでは、オプション商品には種類がある特性上、後ほど拡張可能な構造にする必要があり、その設計を自分が行い導入した
@@ -203,9 +213,9 @@
       - 本番環境では大規模なデータが存在し、それに対応できていなかった
       - 複数回に分割して実行することにより対応した
     - 様々な制約に対応した HTML メールの作成
-      - HTML メールには、各種メールエンジンの対応状況からほとんどのモダンな機能を使用できず、様々な制約が存在する
+      - HTML メールには、各種メールエンジンの対応状況からほとんどモダンな HTML 機能を使用できず、基本的に div タグではなく table タグで実装するなどの様々な制約が存在する
       - また、リッチな HTML メールの作成が要求されており、フロントエンドでのプレビュー表示の要件もあったことから、フロントエンドで文面を組み立て、バックエンドへ送信する設計にした
-      - 設計・開発にあたり、自分が HTML メールを記述する際の制約・注意事項をドキュメントにまとめて開発メンバーへ周知、フロントエンドでも Div や Span などの基礎コンポーネントを table タグで作成し、それらを利用する構造にした
+      - 設計・開発にあたり、自分が HTML メールを記述する際の制約・注意事項をドキュメントにまとめて開発メンバーへ周知、フロントエンドでも table タグで作成した Div や Span などの基礎コンポーネントを用意し、それらを利用する構造にした
   - 開発環境の整備
     - タスクランナーの Makefile から [Task](https://taskfile.dev/) への移行を主導した
       - 説明会により課題間の共有を行ったが、エンジニア3チーム14人全員の合意形成に至らず、最終的には導入まで持ち込めなかった
