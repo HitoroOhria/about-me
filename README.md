@@ -31,7 +31,7 @@
   - JavaScript / TypeScript
   - Node.js / Go / Java / Ruby / Python
 - ライブラリ・フレームワーク
-  - React / Next.js / Vue.js / Storybook / SWR / TanStack Query / Redux / MSW
+  - React / Next.js / Vue.js / Storybook / SWR / TanStack Query / Redux / MSW / zod
   - Echo / Gin / Spring Boot / Ruby on Rails
   - React Native / Expo
 - DB
@@ -39,7 +39,7 @@
 - API等
   - REST API / protobuf / OpenAPI
 - 開発手法等
-  - BFF (GraphQL) / Microservices
+  - BFF (GraphQL) / Microservices / DDD
 - インフラ
   - Docker / Kubernetes / Terraform
 - クラウド
@@ -63,12 +63,15 @@
     - Authentication
     - Storage
     - Firesotore Database
+  - Vercel
 - CI / CD
   - GitHub Actions / Circle CI / ArgoCD
 - 監視
   - Sentry
 - 認可
   - AuthZed
+- 決済
+  - Stripe
 
 ### 提供できる価値
 
@@ -275,3 +278,44 @@
   - 複雑なクエリやテーブル設計の知見を得ることができた
     - ユースケース分割、適切なJOIN、WITH句・サブクエリの削減、取得カラムの削減によるパフォーマンス改善
     - Generated Columns を活用したユニークキー制約のテーブル設計
+
+### ファンクラブサイトの開発 (2022年12月 - 2023年12月)
+
+- 概要
+  - 防災アプリのフロントエンド・バックエンド開発
+- 使用技術
+  - JavaScript / TypeScript / React / Next.js / Storybook / SWR / zod
+  - Node.js
+  - REST API
+  - BFF / DDD
+  - Docker / Terraform
+  - GCP
+    - Cloud Storage
+    - Cloud Functions
+  - Firebase
+    - Firestore
+    - Cloud Run
+    - Cloud SQL
+  - Vercel
+  - GitHub Actions
+  - Sentry
+  - Stripe
+- チーム構成
+  - PO1名、デザイナー1名、プログラマー6名
+- 開発ツール
+  - GitHub / ZenHub
+- 開発手法
+  - スクラム (1週間スプリント)
+- 業務内容
+  - ないコメントよりあるコメントの方がメリットが高いと感じた
+  - 設計において Design Doc を書き Pros/Cons で判断する有効性を実感できた
+  - 新規開発案件でプロジェクトの立ち上げを経験し、初期のソフトウェア設計を行う経験を詰めた
+    - 最初に決めた設計が長期的に影響を及ぼすことを身を持って知れた
+      - 改修さない FIXME, 一部レガシーで修正しづらいコードなど
+    - バックエンドに Factory を導入したことは依存関係を最小化し変更容易性を高める上で効果的だった
+  - フロントエンドに詳しいチームメンバーが多く、Next 12 の新技術を積極的に経験できた
+  - Stripe のコンビニ決済を導入するストーリーを設計から行った
+    - Webhook を中心とした複雑な設計をDesign Doc にドキュメント化し、チームメンバーと共有しながら開発した
+    - 全体的な期限を気にしつつチケットの取捨選択・回避策提案を行った
+  - レトロスペクティブにて具体的な問題に対して解決策を考える振り返りを導入し、PDCA を回してく環境を作った
+  - インシデント対応におけるログの重要さ (データをすべて出力する)
