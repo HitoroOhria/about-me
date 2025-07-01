@@ -58,7 +58,7 @@
     - IAM
     - Cloud Storage
     - Cloud Functions / Cloud Run / GKE
-    - Cloud SQL (MySQL)
+    - Cloud SQL (MySQL, PostgreSQL)
   - Firebase
     - Authentication
     - Storage
@@ -258,7 +258,7 @@
   - GCP
     - Cloud Storage
     - Cloud Run
-    - Cloud SQL
+    - Cloud SQL (PostgreSQL)
   - GitHub Actions
   - Sentry
   - AuthZed
@@ -381,6 +381,7 @@
   - Docker / Nginx
   - AWS
     - ECS 
+    - RDS (PostgreSQL)
 - チーム構成
   - リーダー1名、サブリーダー2名、デザイナー1名、プログラマー6名
 - 開発ツール
@@ -400,11 +401,12 @@
 - 使用技術
   - JavaScript / Vue.js
   - Go / Echo
-  - PostgreSQL / Redis
+  - MySQL / Redis
   - REST API
   - Docker
   - AWS
     - ECS
+    - RDS (MYSQL)
     - CodePipeline
   - Sentry
 - チーム構成
