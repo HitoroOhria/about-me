@@ -282,7 +282,7 @@
 ### ファンクラブサイトの開発 (2022年12月 - 2023年12月)
 
 - 概要
-  - 防災アプリのフロントエンド・バックエンド開発
+  - ファンクラブサイトのフロントエンド・バックエンド開発
 - 使用技術
   - JavaScript / TypeScript / React / Next.js / Storybook / SWR / zod
   - Node.js
@@ -294,8 +294,6 @@
     - Cloud Functions
   - Firebase
     - Firestore
-    - Cloud Run
-    - Cloud SQL
   - Vercel
   - GitHub Actions
   - Sentry
