@@ -31,11 +31,13 @@
   - JavaScript / TypeScript
   - Node.js / Go / Java / Ruby / Python
 - ライブラリ・フレームワーク
-  - React / Next.js / Vue.js / Storybook / SWR / TanStack Query / React-Query / Redux
+  - React / Next.js / Vue.js / Storybook / SWR / TanStack Query / Redux / MSW
   - Echo / Gin / Spring Boot / Ruby on Rails
   - React Native / Expo
 - DB
   - MySQL / PostgreSQL / Redis / SpiceDB
+- API等
+  - REST API / protobuf / OpenAPI
 - 開発手法等
   - BFF (GraphQL) / Microservices
 - インフラ
@@ -63,6 +65,8 @@
     - Firesotore Database
 - CI / CD
   - GitHub Actions / Circle CI / ArgoCD
+- 監視
+  - Sentry
 - 認可
   - AuthZed
 
@@ -172,9 +176,10 @@
   - 求人プラットフォームシステムのフロントエンド・バックエンドの開発
   - 求人プラットフォームシステムのバックエンドのリアーキテクチャ
 - 使用技術
-  - JavaScript / TypeScript / React / Next.js / Storybook / React-Query / Redux
+  - JavaScript / TypeScript / React / Next.js / Storybook / TanStack Query / Redux / MSW
   - Go / Gin
   - MySQL / Redis
+  - REST API
   - Docker / Terraform
   - AWS
     - IAM / VPC
@@ -186,9 +191,10 @@
     - CodeDeploy / CodeBuild / CodePipeline
     - CloudWatch
   - GitHub Actions
+  - Sentry
 - チーム構成
   - 全体で3チーム
-  - 自治tー無はPO1名、ScM1名、プログラマー4名
+  - 自チームはPO1名、ScM1名、デザイナー1名、プログラマー4名
 - 開発ツール
   - GitHub / Jira / Confluence / Google Drive
 - 開発手法
@@ -234,3 +240,38 @@
       - モデルのテストデータを疎結合にするため、自分がファクトリーの導入を提案し、最終的にビルダーパターンのファクトリが導入された
       - 一覧画面などでクエリ効率を優先するため、自分が CQRS の導入を提案し、複雑になりすぎない範囲でコマンド用とクエリ用のモデルを分離した
       - コードの見通しの良さを保つため、converter 層を導入し、モデルの変換ロジックを一箇所にまとめた
+
+### 防災アプリの開発 (2024年1月 - 2024年8月)
+
+- 概要
+  - 防災アプリのフロントエンド・バックエンド開発
+- 使用技術
+  - JavaScript / TypeScript / Vue.js / TanStack Query
+  - React Native / Expo
+  - Go / Gin
+  - PostgreSQL / SpiceDB
+  - protobuf / OpenAPI
+  - Docker / Terraform
+  - GCP
+    - Cloud Storage
+    - Cloud Run
+    - Cloud SQL
+  - GitHub Actions
+  - Sentry
+  - AuthZed
+- チーム構成
+  - PdM1名、デザイナー1名、プログラマー4名
+- 開発ツール
+  - GitHub / Notion
+- 開発手法
+  - スクラム (1週間スプリント)
+- 業務内容
+  - 運用2年のプロダクトの新規開発・保守・運用において、初期のコードが与える影響を身を持って実感できた
+    - 特に設計が重要であり、途中から別のアーキテクチャへ移行することはコストが非常に高い
+    - メンバーの入れ替えも有り、より読みやすいコードやコメントへの重要性を実感した
+  - 軽い状態でタスクを振られることが多く、自分から必要な情報を取りに行きつつタスクを進めた
+  - 全体の設計が共有しきれてなくコミュニケーションコストがかかったため、その改善を行おうとした
+    - 全体のアーキテクチャに対する Design Doc を書き、それをメンバーに納得してもらうのが良いと感じた
+  - 複雑なクエリやテーブル設計の知見を得ることができた
+    - ユースケース分割、適切なJOIN、WITH句・サブクエリの削減、取得カラムの削減によるパフォーマンス改善
+    - Generated Columns を活用したユニークキー制約のテーブル設計
