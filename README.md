@@ -29,17 +29,17 @@
 
 - 言語
   - JavaScript / TypeScript
-  - Node.js / Go / Java / Ruby / Python
+  - Go / Node.js / Java / Ruby / Python
 - ライブラリ・フレームワーク
-  - React / Next.js / Vue.js / Storybook / SWR / TanStack Query / Redux / MSW / zod
-  - Echo / Gin / Spring Boot / Ruby on Rails
+  - React / Next.js / Vue.js / Storybook / MSW / SWR / TanStack Query / Redux / zod
+  - Gin / Echo / Spring Boot / Ruby on Rails
   - React Native / Expo
 - DB
   - MySQL / PostgreSQL / Redis / SpiceDB
 - API等
   - REST API / OpenAPI / protobuf / gRPC
 - 開発手法等
-  - BFF (GraphQL) / Microservices / DDD
+  - BFF (GraphQL) / Microservices / Clearn Architecture / DDD
 - インフラ
   - Docker / Kubernetes / Terraform / Nginx
 - クラウド
@@ -179,7 +179,7 @@
   - 求人プラットフォームシステムのフロントエンド・バックエンドの開発
   - 求人プラットフォームシステムのバックエンドのリアーキテクチャ
 - 使用技術
-  - JavaScript / TypeScript / React / Next.js / Storybook / TanStack Query / Redux / MSW
+  - JavaScript / TypeScript / React / Next.js / Storybook / MSW / TanStack Query / Redux
   - Go / Gin
   - MySQL / Redis
   - REST API
