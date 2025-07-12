@@ -461,7 +461,7 @@
   - Docker
   - AWS
     - ECS
-    - RDS (MYSQL)
+    - RDS (MySQL)
     - CodePipeline
   - Sentry
 - チーム構成
